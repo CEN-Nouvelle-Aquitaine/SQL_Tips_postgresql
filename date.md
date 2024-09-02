@@ -13,3 +13,12 @@ SELECT to_char(now(), 'DD/MM/YYYY HH24:MI:SS') AS date_now_french
 ```sql
 SELECT timezone('CEST',now()) AS date_now_cest
 ```
+
+## Working with date intervals
+
+### Date range (for example, 2 months since now)
+
+
+```sql
+SELECT now() - '2 month'::interval
+```
